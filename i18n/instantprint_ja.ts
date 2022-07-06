@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ja_JP" sourcelanguage="en">
-<context>
-    <name>EasyTemplatePrint</name>
-    <message>
-        <source>EasyTemplatePrint</source>
-        <translation type="vanished">簡易テンプレート出力</translation>
-    </message>
-</context>
+<TS version="2.1" language="ja" sourcelanguage="en">
 <context>
     <name>InstantPrintDialog</name>
     <message>
         <location filename="../EasyTemplatePrint_dialog_base.ui" line="29"/>
         <source>Easy Template Print</source>
-        <translation></translation>
+        <translation>簡易テンプレート印刷</translation>
     </message>
     <message>
         <location filename="../EasyTemplatePrint_dialog_base.ui" line="42"/>
@@ -89,45 +82,6 @@
         <location filename="../EasyTemplatePrint_dialog_base.ui" line="281"/>
         <source> cm</source>
         <translation></translation>
-    </message>
-</context>
-<context>
-    <name>InstantPrintTool</name>
-    <message>
-        <source>Export</source>
-        <translation type="vanished">出力</translation>
-    </message>
-    <message>
-        <source>Help</source>
-        <translation type="vanished">ヘルプ</translation>
-    </message>
-    <message>
-        <source>Invalid composer</source>
-        <translation type="vanished">コンポーザーが無効です</translation>
-    </message>
-    <message>
-        <source>The composer must have exactly one map item.</source>
-        <translation type="vanished">コンポーザーには、1つのマップアイテムが必要です。</translation>
-    </message>
-    <message>
-        <source>Invalid layout</source>
-        <translation type="vanished">無効なレイアウト</translation>
-    </message>
-    <message>
-        <source>The layout must have exactly one map item.</source>
-        <translation type="vanished">レイアウトには、1つのマップアイテムが必要です。</translation>
-    </message>
-    <message>
-        <source>Export Layout</source>
-        <translation type="vanished">出力レイアウト</translation>
-    </message>
-    <message>
-        <source>Export Failed</source>
-        <translation type="vanished">出力に失敗しました</translation>
-    </message>
-    <message>
-        <source>Failed to export the layout.</source>
-        <translation type="vanished">レイアウトの書き出しに失敗しました。</translation>
     </message>
 </context>
 </TS>

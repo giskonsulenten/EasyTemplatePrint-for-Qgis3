@@ -50,7 +50,7 @@ class EasyTemplatePrint(QObject):
 
         # Localize
         locale = QSettings().value("locale/userLocale")[0:2]
-        localePath = os.path.join(self.pluginDir, 'i18n', 'instantprint_{}.qm'.format(locale))
+        localePath = os.path.join(self.pluginDir, 'i18n', 'EasyTemplatePrint_{}.qm'.format(locale))
 
         if os.path.exists(localePath):
             self.translator = QTranslator()

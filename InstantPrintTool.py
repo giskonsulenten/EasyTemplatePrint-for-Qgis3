@@ -49,7 +49,7 @@ from .EasyTemplatePrint_dialog import EasyTemplatePrintDialog
 
 #Localize
 def tr(string):
-    return QCoreApplication.translate('@default', string)
+    return QCoreApplication.translate('EasyTemplatePrint', string)
 
 class InstantPrintTool(QgsMapTool):    
   

@@ -44,7 +44,7 @@ from . import resources
 
 #Localize
 def tr(string):
-    return QCoreApplication.translate('@default', string)
+    return QCoreApplication.translate('EasyTemplatePrint', string)
 
 class EasyTemplatePrint(QObject):
     def __init__(self, iface):

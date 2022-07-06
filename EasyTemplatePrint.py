@@ -22,6 +22,8 @@
  *                                                                         *
  ***************************************************************************/
 """
+
+from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -39,6 +41,10 @@ import os, sys
 from .EasyTemplatePrint_dialog import EasyTemplatePrintDialog
 from .InstantPrintTool import InstantPrintTool
 from . import resources
+
+#Localize
+def tr(string):
+    return QCoreApplication.translate('@default', string)
 
 class EasyTemplatePrint(QObject):
     def __init__(self, iface):

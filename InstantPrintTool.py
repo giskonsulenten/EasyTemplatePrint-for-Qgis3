@@ -25,6 +25,7 @@
  ***************************************************************************/
 """
 
+from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -46,12 +47,14 @@ from .PyPDF2.PyPDF2 import PdfFileMerger
 from .EasyTemplatePrint_dialog import EasyTemplatePrintDialog
 
 
+#Localize
+def tr(string):
+    return QCoreApplication.translate('@default', string)
+
 class InstantPrintTool(QgsMapTool):    
   
     def __init__(self, iface, populateCompositionFz=None):
-        QgsMapTool.__init__(self, iface.mapCanvas())
-        QgsMapToolEmitPoint.__init__(self, iface.mapCanvas())
-
+        
         self.iface = iface
     
         self.rubberBand = None
@@ -64,7 +67,7 @@ class InstantPrintTool(QgsMapTool):
         
         self.mapitem = None
         self.useLines = False
-        
+      
         self.populateCompositionFz = populateCompositionFz
         self.dialog = QDialog(self.iface.mainWindow())
         self.dialogui = EasyTemplatePrintDialog()

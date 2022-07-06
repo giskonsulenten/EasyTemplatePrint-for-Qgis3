@@ -43,8 +43,20 @@ from .InstantPrintTool import InstantPrintTool
 from . import resources
 
 #Localize
-def tr(string):
-    return QCoreApplication.translate('EasyTemplatePrint', string)
+    # noinspection PyMethodMayBeStatic
+    def tr(self, message):
+        """Get the translation for a string using Qt translation API.
+
+        We implement this ourselves since we do not inherit QObject.
+
+        :param message: String for translation.
+        :type message: str, QString
+
+        :returns: Translated version of message.
+        :rtype: QString
+        """
+        # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
+        return QCoreApplication.translate('EasyTemplatePrint', message)
 
 class EasyTemplatePrint(QObject):
     def __init__(self, iface):

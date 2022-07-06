@@ -25,7 +25,6 @@
  ***************************************************************************/
 """
 
-from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -47,26 +46,12 @@ from .PyPDF2.PyPDF2 import PdfFileMerger
 from .EasyTemplatePrint_dialog import EasyTemplatePrintDialog
 
 
-#Localize
-    # noinspection PyMethodMayBeStatic
-    def tr(self, message):
-        """Get the translation for a string using Qt translation API.
-
-        We implement this ourselves since we do not inherit QObject.
-
-        :param message: String for translation.
-        :type message: str, QString
-
-        :returns: Translated version of message.
-        :rtype: QString
-        """
-        # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
-        return QCoreApplication.translate('EasyTemplatePrint', message)
-
 class InstantPrintTool(QgsMapTool):    
   
     def __init__(self, iface, populateCompositionFz=None):
-        
+        QgsMapTool.__init__(self, iface.mapCanvas())
+        QgsMapToolEmitPoint.__init__(self, iface.mapCanvas())
+
         self.iface = iface
     
         self.rubberBand = None
@@ -79,7 +64,7 @@ class InstantPrintTool(QgsMapTool):
         
         self.mapitem = None
         self.useLines = False
-      
+        
         self.populateCompositionFz = populateCompositionFz
         self.dialog = QDialog(self.iface.mainWindow())
         self.dialogui = EasyTemplatePrintDialog()

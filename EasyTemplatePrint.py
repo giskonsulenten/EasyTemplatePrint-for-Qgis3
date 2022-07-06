@@ -22,8 +22,6 @@
  *                                                                         *
  ***************************************************************************/
 """
-
-from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -42,22 +40,6 @@ from .EasyTemplatePrint_dialog import EasyTemplatePrintDialog
 from .InstantPrintTool import InstantPrintTool
 from . import resources
 
-#Localize
-    # noinspection PyMethodMayBeStatic
-    def tr(self, message):
-        """Get the translation for a string using Qt translation API.
-
-        We implement this ourselves since we do not inherit QObject.
-
-        :param message: String for translation.
-        :type message: str, QString
-
-        :returns: Translated version of message.
-        :rtype: QString
-        """
-        # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
-        return QCoreApplication.translate('EasyTemplatePrint', message)
-
 class EasyTemplatePrint(QObject):
     def __init__(self, iface):
         QObject.__init__(self)
@@ -68,7 +50,7 @@ class EasyTemplatePrint(QObject):
 
         # Localize
         locale = QSettings().value("locale/userLocale")[0:2]
-        localePath = os.path.join(self.pluginDir, 'i18n', 'EasyTemplatePrint_{}.qm'.format(locale))
+        localePath = os.path.join(self.pluginDir, 'i18n', 'instantprint_{}.qm'.format(locale))
 
         if os.path.exists(localePath):
             self.translator = QTranslator()

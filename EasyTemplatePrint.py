@@ -22,9 +22,13 @@
  *                                                                         *
  ***************************************************************************/
 """
-from PyQt5 import QtGui, QtCore
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
+from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
+from qgis.PyQt.QtGui import QIcon
+from qgis.PyQt.QtWidgets import QAction
+
+#from PyQt5 import QtGui, QtCore
+#from PyQt5.QtCore import *
+#from PyQt5.QtGui import *
 
 import qgis, platform
 from qgis.core import *

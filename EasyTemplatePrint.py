@@ -41,6 +41,11 @@ from .InstantPrintTool import InstantPrintTool
 from . import resources
 
 class EasyTemplatePrint(QObject):
+    
+    #add 20022-07-09
+     def tr(message):
+        return QCoreApplication.translate('EasyTemplatePrint', message)
+    
     def __init__(self, iface):
         QObject.__init__(self)
 

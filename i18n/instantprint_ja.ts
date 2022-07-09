@@ -4,8 +4,8 @@
 <context>
     <name>EasyTemplatePrint</name>
     <message>
-        <location filename="../EasyTemplatePrint.py" line="72"/>
-        <location filename="../EasyTemplatePrint.py" line="73"/>
+        <location filename="../EasyTemplatePrint.py" line="68"/>
+        <location filename="../EasyTemplatePrint.py" line="69"/>
         <source>EasyTemplatePrint</source>
         <translation>簡易テンプレート印刷</translation>
     </message>

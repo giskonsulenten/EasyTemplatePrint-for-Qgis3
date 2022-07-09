@@ -4,8 +4,8 @@
 <context>
     <name>EasyTemplatePrint</name>
     <message>
-        <location filename="../EasyTemplatePrint.py" line="68"/>
-        <location filename="../EasyTemplatePrint.py" line="69"/>
+        <location filename="../EasyTemplatePrint.py" line="73"/>
+        <location filename="../EasyTemplatePrint.py" line="74"/>
         <source>EasyTemplatePrint</source>
         <translation>簡易テンプレート印刷</translation>
     </message>
@@ -96,68 +96,68 @@
 <context>
     <name>InstantPrintTool</name>
     <message>
-        <location filename="../InstantPrintTool.py" line="72"/>
+        <location filename="../InstantPrintTool.py" line="76"/>
         <source>Export</source>
         <translation>出力</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="74"/>
+        <location filename="../InstantPrintTool.py" line="78"/>
         <source>Help</source>
         <translation>ヘルプ</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="76"/>
+        <location filename="../InstantPrintTool.py" line="80"/>
         <source>PDF Document (*.pdf);;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="77"/>
+        <location filename="../InstantPrintTool.py" line="81"/>
         <source>JPG Image (*.jpg);;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="78"/>
+        <location filename="../InstantPrintTool.py" line="82"/>
         <source>BMP Image (*.bmp);;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="79"/>
+        <location filename="../InstantPrintTool.py" line="83"/>
         <source>PNG Image (*.png);;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="322"/>
+        <location filename="../InstantPrintTool.py" line="326"/>
         <source>Invalid composer</source>
         <translation>無効なコンポーザー</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="322"/>
+        <location filename="../InstantPrintTool.py" line="326"/>
         <source>The composer must have exactly one map item.</source>
         <translation>コンポーザーは最低1つのマップアイテムを持つ必要があります。</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="471"/>
+        <location filename="../InstantPrintTool.py" line="475"/>
         <source>Invalid layout</source>
         <translation>無効なレイアウト</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="471"/>
+        <location filename="../InstantPrintTool.py" line="475"/>
         <source>The layout must have exactly one map item.</source>
         <translation>レイアウトには最低1つのマップアイテムが必要です。</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="515"/>
-        <location filename="../InstantPrintTool.py" line="662"/>
+        <location filename="../InstantPrintTool.py" line="519"/>
+        <location filename="../InstantPrintTool.py" line="666"/>
         <source>Export Layout</source>
         <translation>レイアウト出力</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="680"/>
+        <location filename="../InstantPrintTool.py" line="684"/>
         <source>Export Failed</source>
         <translation>出力に失敗しました</translation>
     </message>
     <message>
-        <location filename="../InstantPrintTool.py" line="680"/>
+        <location filename="../InstantPrintTool.py" line="684"/>
         <source>Failed to export the layout.</source>
         <translation>レイアウトの出力に失敗しました。</translation>
     </message>

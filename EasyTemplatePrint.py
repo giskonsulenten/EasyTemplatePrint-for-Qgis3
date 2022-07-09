@@ -22,14 +22,9 @@
  *                                                                         *
  ***************************************************************************/
 """
-
-from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
-from qgis.PyQt.QtGui import QIcon
-from qgis.PyQt.QtWidgets import QAction
-
-#from PyQt5 import QtGui, QtCore
-#from PyQt5.QtCore import *
-#from PyQt5.QtGui import *
+from PyQt5 import QtGui, QtCore
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 
 import qgis, platform
 from qgis.core import *
@@ -46,11 +41,6 @@ from .InstantPrintTool import InstantPrintTool
 from . import resources
 
 class EasyTemplatePrint(QObject):
-    
-    #add 20022-07-09
-     def tr(message):
-        return QCoreApplication.translate('EasyTemplatePrint', message)
-    
     def __init__(self, iface):
         QObject.__init__(self)
 
